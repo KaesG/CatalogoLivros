@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutCadastro"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editTitulo"
+        android:hint="@string/título"
+        android:inputType="textCapWords"
+        android:minHeight="48dp"
+        android:autofillHints="name"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editAutor"
+        android:hint="@string/autor"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:autofillHints="name"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editData"
+        android:hint="@string/data_leitura"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:autofillHints="none"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editCategoria"
+        android:hint="@string/categoria"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:autofillHints="none"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <SeekBar
+            android:id="@+id/seekNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10" />
+
+        <TextView
+        android:id="@+id/textNota"
+        android:text="@string/nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/editDescricao"
+        android:hint="@string/descrição"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:autofillHints="text"
+        android:minHeight="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:text="@string/salvar"
+        android:minHeight="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</ScrollView>
